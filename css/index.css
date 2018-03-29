@@ -1,0 +1,129 @@
+body,div,img,p,ul{
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+@media screen and (max-width: 1000px) {
+    .center{
+        position: relative;
+        width: 1000px;
+    }
+    .main_banner{
+        width: 1000px;
+    }
+}
+@media screen and (min-width: 1001px){
+    .center{
+        position: relative;
+        width: 1000px;
+        left: 50%;
+        margin-left: -500px;
+    }
+    .main_banner{
+        width: 100%;
+    }
+}
+#header{
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    height: 60px;
+    opacity: .7;
+    background: #fff;
+    z-index: 9999;
+}
+.header_logo{
+    height: 60px;
+}
+.header_logo_a{
+    display: block;
+    width: 160px;
+    height: 60px;
+    background:url('../imgs/logo.png');
+    background-size: 100% 100%;
+}
+#main{
+    position: relative;
+    height: auto;
+}
+.main_banner{
+    position: relative;
+    height: auto;
+}
+.main_banner>img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.main_container{
+    height: auto;
+}
+#contents{
+    list-style: none;
+    position: relative;
+    overflow: hidden;
+    height: 300px;
+    box-sizing: border-box;
+    padding-top: 30px;
+}
+ul#contents>li{
+    list-style: none;
+    float: left;
+    width: 218px;
+/*     height: 248px; */
+    height: 187px;
+    overflow: hidden;
+    border: 1px solid #e8e8e8;
+    margin: 2px 28px 2px 2px;
+    background: #fafafa;
+    transition: all 0.4s;
+}
+ul#contents>li:hover{
+    transform: translateY(-15px);
+    height:248px;
+    box-shadow: 0px 0px 20px #a5a5a5;
+}
+ul#contents>li:hover>p{
+    opacity: 1;
+}
+ul#contents>li>a{
+    text-decoration: none;
+    color: #333;
+}
+ul#contents>li div{
+    padding: 12px 8px;
+    overflow: hidden;
+    background: #fff;
+    border-bottom: 1px solid #e6e6e6;
+}
+ul#contents>li div>img{
+    width: 198px;
+    height: 118px;
+    border: solid 1px #e6e6e6
+}
+ul#contents>li div>p{
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    font-weight: 700;
+    font-size: 14px;
+}
+ul#contents>li>p{
+    display: block;
+    width: 100%;
+    opacity: 0;
+    box-sizing: border-box;
+    padding: 8px 12px 0 12px;
+    font-size: 12px;
+    color: #666;
+    transition: all 0.5s;
+    transition-delay: 0.2s;
+}
+#footer{
+    width: 100%;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    font-size: 12px;
+    color: grey;
+}
